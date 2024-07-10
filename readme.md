@@ -1,38 +1,29 @@
-first open the terminal.
+1. Open the terminal.
 
-Then give mvn clean command
+2. Run the following commands in sequence:
 
-Then give mvn compile command
+   ```sh
+   mvn clean
+   mvn compile
+   mvn package
+3. Change directory to target:
+   ```cd target```
+4. Run the program with the following command, replacing C:\Users\leech\Downloads\openjfx-21.0.1_windows-x64_bin-sdk\javafx-sdk-21.0.1\lib with your Java SDK lib path:
+    ```java --module-path "C:\Users\leech\Downloads\openjfx-21.0.1_windows-x64_bin-sdk\javafx-sdk-21.0.1\lib" --add-modules javafx.controls,javafx.fxml -jar .\demo1-1.0-SNAPSHOT.jar```
+5. The program will ask you to register or login. Even if you close the game, the user is still stored, and the next time you open the game, you can simply login.
 
-Then give mvn package command and you will see that if the code is correct it will pass the test cases.
+6. After successful login, you can play the game by clicking on the play button. The cherry icon will show you how many cherries you have collected, and the leaderboard option will display the top 3 scorers.
 
-Then do cd target.
+7. Once you press the play button, the game starts. Mouse click for a particular time increases the length of the rod, and when you release it, it will rotate and fall down. If it lands on the width of the destination tower, the player moves forward; otherwise, the player falls. While moving, the player can collect cherries by pressing the space bar at the exact time where the cherry is located.
 
-There type java --module-path "C:\Users\leech\Downloads\openjfx-21.0.1_windows-x64_bin-sdk\javafx-sdk-21.0.1\lib" --add-modules javafx.controls,javafx.fxml -jar .\demo1-1.0-SNAPSHOT.jar
-just replace the "C:\Users\leech\Downloads\openjfx-21.0.1_windows-x64_bin-sdk\javafx-sdk-21.0.1\lib" with you java sdk lib path and the program will run
+8. The screen has a pause button where you can save the state of the game. You can then see the resume button on the first screen.
 
-first the program will ask you to register or login. And even i you close the game the user is still stored and the next
-time you open the game you can simply login
+9. If you fall, a third screen will appear with the options: play again, home, and see leaderboard.
 
-after login is successfully completed you can play the game by clicking on the play button, the cherry icon will show
-you how many cherries have you collected and the leader board option will tell you the top 3 scorers.
+10. Clicking on the play again button restarts the game.
+11. Clicking on the home button takes you to the first screen.
+12. Clicking on the leaderboard button will show you the leaderboard.
 
-Once you press the play button the game starts, mouse click for a particular time incrase the length of the rod and when you
-will release it , it will rotate and fall down , and if lands on the width of the destination tower the player moves forward else
-the player falls. Also while moving the player can collect cherries by pressing space bar at the exact time where the cherry
-is located.
-
-This screen has a pause button where you can save the state of the game.Then you can see the resume button on the first screen.
-
-When you will fall a third screen will appear which will have the play again button, home button and the see leader board button clicking on it.
-Clicking on the play again button the game again starts, clicking on the home button takes you to the first screen and clicking on the
-leaderboard button will show you the leaderboard.
-
-Thank you
-kartikeya 2022241
+Thank you,
+Kartikeya 2022241
 Aahan Piplani 2022001
-
-github repo link: https://github.com/Kartikeya2022241/AP_PROJECT
-
-
-
